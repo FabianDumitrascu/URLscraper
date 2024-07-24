@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 url = 'https://nos.nl/artikel/2530107-veldbestormers-ontruiming-en-afgekeurde-goal-na-2-uur-marokko-wint-absurd-duel-op-spelen'
+url = 'https://nos.nl/artikel/2530138-uefa-beboet-zeven-voetbalbonden-na-racistische-of-discriminerende-uitingen-op-ek'
 
 
 def get_text_from_url(url):
@@ -27,7 +28,7 @@ def get_title_from_url(url):
     title = title.replace('<title>', ' ').replace('</title>', '').strip()
     return title
 
-print(get_title_from_url(url), '/n')
+print(get_title_from_url(url), '\n')
 print(get_text_from_url(url))
 
 
